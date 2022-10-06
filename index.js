@@ -1,8 +1,8 @@
 const { argv } = require('node:process');
 let vowelCount = 0;
 
-[...argv.slice(2).join(' ')].forEach((character) => {
-    if (['a', 'e', 'i', 'o', 'u'].includes(character.toLowerCase())) {
+[...argv.slice(2).join(' ').toLowerCase()].forEach((character) => {
+    if (['a', 'e', 'i', 'o', 'u'].includes(character)) {
         vowelCount++;
     }
 })
